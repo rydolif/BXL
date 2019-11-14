@@ -54,22 +54,18 @@ ul
 	padding: 0
 	list-style-type: none
 
-i
-	font-style: normal
-	font-size: 16px
-	color: #fff
-
 input, textarea
-	border-radius: 5px
-	border: 1px solid #ffffff
+	border: none
+	border-bottom: 1px solid #c3c3c3
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
 	background-color: transparent
 	padding: 0 20px
-	color: $accent
+	color: $text
 	width: 100%
 	font-size: 20px
+	transition: all .6s
 	
 	&:focus:required:invalid
 		border-color: $accent
@@ -87,7 +83,14 @@ input, textarea
 		color: #a6a6a6
 		font-size: 20px
 		line-height: 40px
-		font-weight: 400
+
+textarea
+	resize: none
+	padding-top: 10px
+	line-height: 1.4
+
+	&::placeholder
+		line-height: 1.4
 
 sub, sup
 	font-size: 60%
@@ -134,6 +137,6 @@ input[type=number]::-webkit-outer-spin-button
 // @import "_base/preloader"
 @import "_base/animation"
 @import "_base/btn"
-// @import "_base/form"
-// @import "_base/modal"
+@import "_base/form"
+@import "_base/modal"
 @import "_base/hamburger"
