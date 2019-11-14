@@ -41,6 +41,7 @@ gulp.task('minjs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
 		'app/libs/fancybox/jquery.fancybox.js',  			//----jquery
+		'app/libs/swiper/swiper.min.js',  			//----jquery
 		'app/libs/jquery.popupoverlay.js',  			//----jquery
 		'app/libs/jquery.validate.js',  			//----jquery
 		'app/libs/jquery.mask.min.js',  			//----jquery

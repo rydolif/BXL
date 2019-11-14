@@ -1,6 +1,21 @@
 $(function() {
   
 //-------------------------------попандер---------------------------------------
+  var swiper = new Swiper('.certificates__slider', {
+    direction: 'vertical',
+    effect: 'fade',
+    spaceBetween: 0,
+    pagination: {
+      el: '.certificates__pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.certificates__next',
+      prevEl: '.certificates__prev',
+    },
+  });
+
+//-------------------------------попандер---------------------------------------
   $('.modal').popup({
     escape: false,
     blur: false,
@@ -31,13 +46,14 @@ $(function() {
   });
 
 //-------------------------------активна ссилка на якій знаходишся для меню---------------------------------------
-  $('.cabinet__nav ul a').each(function () {
+  $('.header__nav a').each(function () {
       var location = window.location.href;
       var link = this.href; 
       if(location == link) {
           $(this).addClass('active');
       }
   });
+
 //------------------------------------form-------------------------------------------
   $('input[type="tel"]').mask('+0 (000) 000-00-00');
 
