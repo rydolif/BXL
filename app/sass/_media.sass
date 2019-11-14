@@ -11,6 +11,23 @@
 	.container
 		max-width: 1200px
 
+	.contacts
+
+		&__form,
+		&__info
+			width: 48%
+
+		&__info
+			p
+				margin-bottom: 30px
+
+		&__form
+			&_header
+				padding-left: 80px
+				padding-right: 80px
+			&_content
+				padding: 40px 80px
+
 	.header
 		&__logo
 			p
@@ -62,6 +79,20 @@
 
 	.container
 		max-width: 992px
+
+	.contacts
+		&__info
+			p
+				margin-bottom: 20px
+
+				span
+					margin-bottom: 20px
+
+		&__form
+			&_header
+				padding: 20px 60px
+			&_content
+				padding: 30px 60px
 
 	.header
 		padding: 10px 0
@@ -130,6 +161,24 @@
 	.container
 		max-width: 767px
 	
+	.contacts
+		&__info
+			p
+				margin-bottom: 15px
+
+				span
+					margin-bottom: 15px
+
+		&__form
+			&_header
+				padding: 10px 30px
+
+			&_content
+				padding: 20px 30px
+
+			&_mail
+				margin-bottom: 15px
+
 	.hamburger
 		display: block
 
@@ -240,6 +289,38 @@
 	.container
 		max-width: 576px
 
+	.contacts
+		padding: 40px 0
+		text-align: center
+
+		&::before
+			height: 150px
+
+		&__info,
+		&__form
+			width: 100%
+
+		&__info
+			margin-bottom: 20px
+
+			p
+				margin-bottom: 15px
+				line-height: 1.4
+				span
+					margin-bottom: 5px
+
+		&__form
+			max-width: 420px
+			margin: 0 auto
+
+			label
+				text-align: left
+
+		&__soc
+			margin-bottom: 20px
+			justify-content: center
+			
+
 	.main
 		padding-top: 0
 
@@ -277,6 +358,29 @@
 	.container
 		max-width: 100%
 
+	.form
+
+		input,
+		textarea
+			font-size: 14px
+
+			&::placeholder
+				font-size: 14px
+
+		input
+			height: 45px
+			line-height: 45px
+
+			&::placeholder
+				line-height: 45px
+
+	.contacts
+		h2
+			margin-bottom: 15px
+
+		p
+			margin-bottom: 10px
+
 	.header__logo	
 		p
 			display: none
@@ -303,6 +407,15 @@
 
 	h2, h3
 		font-size: 18px
+
+	.modal
+		padding: 15px
+
+	.contacts__form
+		&_content,
+		&_header
+			padding: 10px
+
 
 	.header
 		&__container

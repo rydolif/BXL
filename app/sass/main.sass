@@ -12,7 +12,7 @@
 .header
 	padding: 15px 0
 	background-color: #fff
-	box-shadow: 0 0 5px 0 rgba($text, .6)
+	box-shadow: 0 0 5px 0 rgba(#555555, .6)
 
 	&__container
 		position: relative
@@ -427,6 +427,119 @@
 	&__container
 		display: flex
 		justify-content: space-between
+
+
+.contacts
+	position: relative
+	padding-top: 55px
+	padding-bottom: 50px
+
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 245px
+		width: 100%
+		background-color: $accent
+		z-index: -1
+
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	h2
+		color: #fff
+		margin-bottom: 20px
+
+	p
+		line-height: 1.8
+		color: #555
+		margin-bottom: 50px
+
+		&:last-child
+			margin-bottom: 0
+
+		a, span
+			display: block
+			
+		span
+			color: #b8b8b8
+			margin-bottom: 25px
+
+		b
+			font-weight: 600
+
+		a
+			color: #555
+
+			&:hover,
+			&:focus
+				color: $accent
+
+	&__sub-title
+		margin-bottom: 75px
+		color: #fff !important
+
+	&__soc
+		display: flex
+		align-items: center
+		line-height: 1
+		margin-bottom: 65px
+
+		svg
+			width: 20px
+			fill: #fff
+			transition: all .6s
+
+		a
+			margin-right: 15px
+
+			&:hover,
+			&:focus
+
+				svg
+					transform: scale(.8)
+					fill: $text
+
+			&:last-child
+				margin-right: 0
+
+	&__form
+		margin-top: 55px
+		max-width: 690px
+		box-shadow: 0 0 15px 0 rgba($text, .4)
+		
+		&_header
+			padding: 40px 115px 30px
+			background-color: #ebebeb
+
+			p
+				color: #b8b8b8
+
+		&_content
+			padding: 45px 115px 80px
+			background-color: #fff
+
+		label
+			color: #676767
+			line-height: 1.4
+
+			a
+				color: #676767
+
+		&_mail
+			margin-bottom: 50px
+
+		&_check
+			margin-bottom: 55px
+
+		.btn
+			max-width: 330px
+
 
 
 @import "media" // Always at the end
