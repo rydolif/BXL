@@ -1,13 +1,11 @@
-@import "fonts"
-
 
 //----------------------fonts---------------------
 $fonts: 'IBM Plex Sans', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
-$accent: #b19266
-$text: #000
+$accent: #66cc33
+$text: #333333
 //---------------------end-color---------------------
 
 body
@@ -15,7 +13,7 @@ body
 	position: relative
 	min-width: 320px
 	font-family: $fonts
-	font-size: 14px
+	font-size: 18px
 	color: $text
 	line-height: 1.4
 	font-weight: 400
@@ -37,12 +35,19 @@ h1, h2, h3, h4, h5, h6
 	line-height: 1.1
 	margin: 0
 	padding: 0
+	text-transform: uppercase
+
+h1
+	font-size: 36px
+	margin-bottom: 60px
 
 h2
-	font-size: 28px
+	font-size: 24px
+	margin-bottom: 60px
 
-	span
-		color: $accent
+h3
+	font-size: 24px
+
 
 ul
 	margin: 0
@@ -100,6 +105,7 @@ a:focus,
 a:hover
 	outline: none
 	text-decoration: none
+	transition: all .6s
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button 
@@ -120,10 +126,14 @@ input[type=number]::-webkit-outer-spin-button
 	-webkit-appearance: none
 	margin: 0
 
+.no-scroll
+	overflow: hidden
+	
+	
 
 // @import "_base/preloader"
-// @import "_base/animation"
+@import "_base/animation"
 @import "_base/btn"
 // @import "_base/form"
 // @import "_base/modal"
-// @import "_base/hamburger"
+@import "_base/hamburger"
