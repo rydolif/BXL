@@ -749,4 +749,70 @@
 			padding-left: 20px
 
 
+.news
+	padding: 
+		top: 55px
+		bottom: 85px
+
+	h2
+		margin-bottom: 25px
+
+	img
+		position: relative
+		width: 100%
+		height: auto
+		transition: all .6s
+		transform: scale(.92)
+
+		
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 75px
+
+		p
+			margin-bottom: 25px
+		
+	&__item
+		position: relative
+		width: 25%
+		color: #606060
+		margin-bottom: 15px
+
+		&:hover,
+		&:focus
+			background-color: $accent
+			color: #fff
+
+			b
+				color: #fff
+
+			img
+				transform: scale(1)
+
+		b
+			color: #252525
+			font-weight: 600
+			transition: all .6s
+
+		time
+			font-weight: 300
+
+		&_text
+			padding: 30px 15px
+	
+	&__more
+		text-decoration: underline
+		text-align: right
+
+		a
+			color: $accent
+
+			&:hover,
+			&:focus
+				color: $accent
+
+
+
+
 @import "media" // Always at the end
