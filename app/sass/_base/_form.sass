@@ -27,6 +27,25 @@
 		input
 			display: none
 
+		svg
+			position: relative
+			bottom: 0
+			fill: $accent
+			width: 28px
+			margin-left: 15px
+			transition: all .6s
+
+		label
+			cursor: pointer
+
+			&:hover,
+			&:focus
+				color: $accent
+				transition: all .6s
+
+				svg
+					bottom: -10px
+
 	&__btn
 		display: flex
 		justify-content: flex-end
