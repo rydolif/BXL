@@ -40,7 +40,7 @@
 				margin-right: 0
 
 		a
-			color: $text
+			color: #bababa
 			font-weight: 600
 
 			&:hover,
@@ -694,31 +694,29 @@
 	align-items: center
 	flex-wrap: wrap
 	width: 100%
-	font-size: 24px
-	padding: 50px 0
+	padding: 40px 0
 
 	li
-		margin-right: 20px
+		margin-right: 10px
+		color: #bababa
 
 		&:last-child
 			margin-right: 0
 
 	a
-		color: $text
-		font-weight: 700
-		text-transform: uppercase
+		color: #bababa
 
 		&:hover,
 		&:focus
 			color: $accent
 
-	span
-		font-weight: 600
-
 
 .article
 	padding:
 		bottom: 75px
+
+	h2
+		margin-bottom: 20px
 
 	&__content
 		img
@@ -813,6 +811,50 @@
 				color: $accent
 
 
+.tovar
+	padding-top: 0 !important
+
+	&__content
+		
+
+		h2
+			margin-bottom: 10px
+
+		img
+			float: left
+			max-width: 50%
+			margin-right: 5%
+			margin-bottom: 5%
+
+		p
+			line-height: 1.7
+			text-indent: .5em
+	
+	&__production
+		margin-top: 50px
+
+		h2
+			margin-bottom: 35px
+
+		li
+			display: flex
+			justify-content: space-between
+			padding: 0 70px 0 10px
+			margin-bottom: 10px
+			font-size: 16px
+			line-height: 25px
+
+			&:nth-child(odd)
+				background-color: #f6f6f6
+
+			span
+				max-width: 80%
+
+				&:last-child
+					white-space: nowrap
+
+		span
+			padding: 0 5px
 
 
 @import "media" // Always at the end
